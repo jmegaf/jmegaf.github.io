@@ -2,6 +2,7 @@
 categories: programming
 date: 2016-05-25
 layout: post
+disqus_id: 1
 title: "Mean, Clean State Machine"
 ---
 
