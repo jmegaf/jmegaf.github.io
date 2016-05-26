@@ -165,7 +165,7 @@ public class Pause implements Screen {
 {% endhighlight %}
 
 It also turns out that chain-of-responsibility behaviours are very easy to implement with this approach.
-If the "pause" screen wanted to draw some text and blur on top of the paused screen, it can simply call the method on `previous`:
+If the "pause" screen wanted to draw some text and blur on top of the paused screen, it can simply call the method on <tt>previous</tt>:
 
 {% highlight java %}
 // method would be added to the Screen interface
@@ -176,7 +176,7 @@ public void draw(Graphics g) {
 }
 {% endhighlight %}
 
-Using an external stack, each state would need to expose flags like `doRenderThrough`, and more boilerplate would need to go into the state manager.
+Using an external stack, each state would need to expose flags like <tt>doRenderThrough</tt>, and more boilerplate would need to go into the state manager.
 
 ## Appendix
 
